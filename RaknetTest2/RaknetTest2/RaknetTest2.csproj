@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2CFED9EA-E5F7-49C3-966F-1F86AE129C90}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RaknetTest2</RootNamespace>
+    <AssemblyName>RaknetTest2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SWIG\AddressOrGUID.cs" />
+    <Compile Include="SWIG\BitStream.cs" />
+    <Compile Include="SWIG\ByteQueue.cs" />
+    <Compile Include="SWIG\Cell.cs" />
+    <Compile Include="SWIG\ColumnDescriptor.cs" />
+    <Compile Include="SWIG\CommandParserInterface.cs" />
+    <Compile Include="SWIG\ConnectionAttemptResult.cs" />
+    <Compile Include="SWIG\ConnectionGraph2.cs" />
+    <Compile Include="SWIG\ConnectionState.cs" />
+    <Compile Include="SWIG\DefaultMessageIDTypes.cs" />
+    <Compile Include="SWIG\DirectoryDeltaTransfer.cs" />
+    <Compile Include="SWIG\DownloadCompleteStruct.cs" />
+    <Compile Include="SWIG\FileList.cs" />
+    <Compile Include="SWIG\FileListNode.cs" />
+    <Compile Include="SWIG\FileListNodeContext.cs" />
+    <Compile Include="SWIG\FileListProgress.cs" />
+    <Compile Include="SWIG\FileListTransfer.cs" />
+    <Compile Include="SWIG\FileListTransferCBInterface.cs" />
+    <Compile Include="SWIG\FileProgressStruct.cs" />
+    <Compile Include="SWIG\FilterQuery.cs" />
+    <Compile Include="SWIG\FLP_Printf.cs" />
+    <Compile Include="SWIG\FullyConnectedMesh2.cs" />
+    <Compile Include="SWIG\IncrementalReadInterface.cs" />
+    <Compile Include="SWIG\JoinTeamType.cs" />
+    <Compile Include="SWIG\LogCommandParser.cs" />
+    <Compile Include="SWIG\MessageFilter.cs" />
+    <Compile Include="SWIG\MultilistType.cs" />
+    <Compile Include="SWIG\NatPunchthroughClient.cs" />
+    <Compile Include="SWIG\NatPunchthroughDebugInterface.cs" />
+    <Compile Include="SWIG\NatPunchthroughDebugInterface_PacketLogger.cs" />
+    <Compile Include="SWIG\NatPunchthroughDebugInterface_Printf.cs" />
+    <Compile Include="SWIG\NatPunchthroughServer.cs" />
+    <Compile Include="SWIG\NatPunchthroughServerDebugInterface.cs" />
+    <Compile Include="SWIG\NatPunchthroughServerDebugInterface_PacketLogger.cs" />
+    <Compile Include="SWIG\NatPunchthroughServerDebugInterface_Printf.cs" />
+    <Compile Include="SWIG\NatTypeDetectionClient.cs" />
+    <Compile Include="SWIG\NatTypeDetectionServer.cs" />
+    <Compile Include="SWIG\NetworkIDManager.cs" />
+    <Compile Include="SWIG\NetworkIDObject.cs" />
+    <Compile Include="SWIG\OnFileStruct.cs" />
+    <Compile Include="SWIG\OutOfBandIdentifiers.cs" />
+    <Compile Include="SWIG\Packet.cs" />
+    <Compile Include="SWIG\PacketConsoleLogger.cs" />
+    <Compile Include="SWIG\PacketFileLogger.cs" />
+    <Compile Include="SWIG\PacketLogger.cs" />
+    <Compile Include="SWIG\PacketPriority.cs" />
+    <Compile Include="SWIG\PacketReliability.cs" />
+    <Compile Include="SWIG\PluginInterface2.cs" />
+    <Compile Include="SWIG\PluginReceiveResult.cs" />
+    <Compile Include="SWIG\PublicKey.cs" />
+    <Compile Include="SWIG\PublicKeyMode.cs" />
+    <Compile Include="SWIG\PunchthroughConfiguration.cs" />
+    <Compile Include="SWIG\RakNet.cs" />
+    <Compile Include="SWIG\RakNetBPlusTreeRow.cs" />
+    <Compile Include="SWIG\RakNetGUID.cs" />
+    <Compile Include="SWIG\RakNetListCell.cs" />
+    <Compile Include="SWIG\RakNetListCellPointer.cs" />
+    <Compile Include="SWIG\RakNetListColumnDescriptor.cs" />
+    <Compile Include="SWIG\RakNetListFileListNode.cs" />
+    <Compile Include="SWIG\RakNetListFilterQuery.cs" />
+    <Compile Include="SWIG\RakNetListRakNetGUID.cs" />
+    <Compile Include="SWIG\RakNetListRakString.cs" />
+    <Compile Include="SWIG\RakNetListSortQuery.cs" />
+    <Compile Include="SWIG\RakNetListSystemAddress.cs" />
+    <Compile Include="SWIG\RakNetListTableRow.cs" />
+    <Compile Include="SWIG\RakNetListUnsignedInt.cs" />
+    <Compile Include="SWIG\RakNetListUnsignedShort.cs" />
+    <Compile Include="SWIG\RakNetPageRow.cs" />
+    <Compile Include="SWIG\RakNetPINVOKE.cs" />
+    <Compile Include="SWIG\RakNetStatistics.cs" />
+    <Compile Include="SWIG\RakPeer.cs" />
+    <Compile Include="SWIG\RakPeerInterface.cs" />
+    <Compile Include="SWIG\RakString.cs" />
+    <Compile Include="SWIG\ReadyEvent.cs" />
+    <Compile Include="SWIG\ReadyEventSystemStatus.cs" />
+    <Compile Include="SWIG\RemoteSystemIndex.cs" />
+    <Compile Include="SWIG\RNSPerSecondMetrics.cs" />
+    <Compile Include="SWIG\Router2.cs" />
+    <Compile Include="SWIG\Router2DebugInterface.cs" />
+    <Compile Include="SWIG\Row.cs" />
+    <Compile Include="SWIG\SimpleMutex.cs" />
+    <Compile Include="SWIG\SocketDescriptor.cs" />
+    <Compile Include="SWIG\SortQuery.cs" />
+    <Compile Include="SWIG\StartupResult.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_bool.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_DataStructures__ListT_RakNetSocket2_p_t.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_TeamMember_p_t.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_Team_p_t.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_double.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_p_RakNet__TM_Team.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_p_RakNet__TM_TeamMember.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_p_RakNet__TM_World.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_RakNet__NatPunchthroughClient__SendPing.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_RakNet__ReadyEvent__RemoteSystem.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_RakNet__TCPInterface.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_RakNet__TM_World__JoinRequestHelper.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_RNS2RecvStruct.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_unsigned_int.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_unsigned_long_long.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_unsigned_short.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_void.cs" />
+    <Compile Include="SWIG\SWIGTYPE_p_wchar_t.cs" />
+    <Compile Include="SWIG\SystemAddress.cs" />
+    <Compile Include="SWIG\Table.cs" />
+    <Compile Include="SWIG\TeamManager.cs" />
+    <Compile Include="SWIG\TeamSelection.cs" />
+    <Compile Include="SWIG\ThreadsafePacketLogger.cs" />
+    <Compile Include="SWIG\TMTopology.cs" />
+    <Compile Include="SWIG\TM_Team.cs" />
+    <Compile Include="SWIG\TM_TeamMember.cs" />
+    <Compile Include="SWIG\TM_World.cs" />
+    <Compile Include="SWIG\TransportInterface.cs" />
+    <Compile Include="SWIG\UDPForwarder.cs" />
+    <Compile Include="SWIG\UDPForwarderResult.cs" />
+    <Compile Include="SWIG\UDPProxyClient.cs" />
+    <Compile Include="SWIG\UDPProxyClientResultHandler.cs" />
+    <Compile Include="SWIG\UDPProxyCoordinator.cs" />
+    <Compile Include="SWIG\UDPProxyServer.cs" />
+    <Compile Include="SWIG\UDPProxyServerResultHandler.cs" />
+    <Compile Include="SWIG\uint24_t.cs" />
+    <Compile Include="SWIG\UnsignedIntPointer.cs" />
+    <Compile Include="SWIG\UnsignedShortPointer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
