@@ -462,6 +462,12 @@ public class RakPeer : RakPeerInterface {
     return ret;
   }
 
+    /// <summary>
+    /// Set how long to wait before giving up on sending an unreliable message
+    /// Useful if the network is clogged up.
+    /// Set to 0 or less to never timeout.  Defaults to 0.
+    /// </summary>
+    /// <param name="timeoutMS">timeoutMS How many ms to wait before simply not sending an unreliable message</param>
   public override void SetUnreliableTimeout(uint timeoutMS) {
     RakNetPINVOKE.RakPeer_SetUnreliableTimeout(swigCPtr, timeoutMS);
   }

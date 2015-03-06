@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C9A7B44-0B7A-4B04-A08E-0AB22C4E7CBF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RakNetDotNet</RootNamespace>
+    <AssemblyName>RakNetDotNet</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RakNet\AddressOrGUID.cs" />
+    <Compile Include="RakNet\BitStream.cs" />
+    <Compile Include="RakNet\ByteQueue.cs" />
+    <Compile Include="RakNet\Cell.cs" />
+    <Compile Include="RakNet\ColumnDescriptor.cs" />
+    <Compile Include="RakNet\CommandParserInterface.cs" />
+    <Compile Include="RakNet\ConnectionAttemptResult.cs" />
+    <Compile Include="RakNet\ConnectionGraph2.cs" />
+    <Compile Include="RakNet\ConnectionState.cs" />
+    <Compile Include="RakNet\DefaultMessageIDTypes.cs" />
+    <Compile Include="RakNet\DirectoryDeltaTransfer.cs" />
+    <Compile Include="RakNet\DownloadCompleteStruct.cs" />
+    <Compile Include="RakNet\FileList.cs" />
+    <Compile Include="RakNet\FileListNode.cs" />
+    <Compile Include="RakNet\FileListNodeContext.cs" />
+    <Compile Include="RakNet\FileListProgress.cs" />
+    <Compile Include="RakNet\FileListTransfer.cs" />
+    <Compile Include="RakNet\FileListTransferCBInterface.cs" />
+    <Compile Include="RakNet\FileProgressStruct.cs" />
+    <Compile Include="RakNet\FilterQuery.cs" />
+    <Compile Include="RakNet\FLP_Printf.cs" />
+    <Compile Include="RakNet\FullyConnectedMesh2.cs" />
+    <Compile Include="RakNet\IncrementalReadInterface.cs" />
+    <Compile Include="RakNet\JoinTeamType.cs" />
+    <Compile Include="RakNet\LogCommandParser.cs" />
+    <Compile Include="RakNet\MessageFilter.cs" />
+    <Compile Include="RakNet\MultilistType.cs" />
+    <Compile Include="RakNet\NatPunchthroughClient.cs" />
+    <Compile Include="RakNet\NatPunchthroughDebugInterface.cs" />
+    <Compile Include="RakNet\NatPunchthroughDebugInterface_PacketLogger.cs" />
+    <Compile Include="RakNet\NatPunchthroughDebugInterface_Printf.cs" />
+    <Compile Include="RakNet\NatPunchthroughServer.cs" />
+    <Compile Include="RakNet\NatPunchthroughServerDebugInterface.cs" />
+    <Compile Include="RakNet\NatPunchthroughServerDebugInterface_PacketLogger.cs" />
+    <Compile Include="RakNet\NatPunchthroughServerDebugInterface_Printf.cs" />
+    <Compile Include="RakNet\NatTypeDetectionClient.cs" />
+    <Compile Include="RakNet\NatTypeDetectionServer.cs" />
+    <Compile Include="RakNet\NetworkIDManager.cs" />
+    <Compile Include="RakNet\NetworkIDObject.cs" />
+    <Compile Include="RakNet\OnFileStruct.cs" />
+    <Compile Include="RakNet\OutOfBandIdentifiers.cs" />
+    <Compile Include="RakNet\Packet.cs" />
+    <Compile Include="RakNet\PacketConsoleLogger.cs" />
+    <Compile Include="RakNet\PacketFileLogger.cs" />
+    <Compile Include="RakNet\PacketLogger.cs" />
+    <Compile Include="RakNet\PacketPriority.cs" />
+    <Compile Include="RakNet\PacketReliability.cs" />
+    <Compile Include="RakNet\PluginInterface2.cs" />
+    <Compile Include="RakNet\PluginReceiveResult.cs" />
+    <Compile Include="RakNet\PublicKey.cs" />
+    <Compile Include="RakNet\PublicKeyMode.cs" />
+    <Compile Include="RakNet\PunchthroughConfiguration.cs" />
+    <Compile Include="RakNet\RakNet.cs" />
+    <Compile Include="RakNet\RakNetBPlusTreeRow.cs" />
+    <Compile Include="RakNet\RakNetGUID.cs" />
+    <Compile Include="RakNet\RakNetListCell.cs" />
+    <Compile Include="RakNet\RakNetListCellPointer.cs" />
+    <Compile Include="RakNet\RakNetListColumnDescriptor.cs" />
+    <Compile Include="RakNet\RakNetListFileListNode.cs" />
+    <Compile Include="RakNet\RakNetListFilterQuery.cs" />
+    <Compile Include="RakNet\RakNetListRakNetGUID.cs" />
+    <Compile Include="RakNet\RakNetListRakString.cs" />
+    <Compile Include="RakNet\RakNetListSortQuery.cs" />
+    <Compile Include="RakNet\RakNetListSystemAddress.cs" />
+    <Compile Include="RakNet\RakNetListTableRow.cs" />
+    <Compile Include="RakNet\RakNetListUnsignedInt.cs" />
+    <Compile Include="RakNet\RakNetListUnsignedShort.cs" />
+    <Compile Include="RakNet\RakNetPageRow.cs" />
+    <Compile Include="RakNet\RakNetPINVOKE.cs" />
+    <Compile Include="RakNet\RakNetStatistics.cs" />
+    <Compile Include="RakNet\RakPeer.cs" />
+    <Compile Include="RakNet\RakPeerInterface.cs" />
+    <Compile Include="RakNet\RakString.cs" />
+    <Compile Include="RakNet\ReadyEvent.cs" />
+    <Compile Include="RakNet\ReadyEventSystemStatus.cs" />
+    <Compile Include="RakNet\RemoteSystemIndex.cs" />
+    <Compile Include="RakNet\RNSPerSecondMetrics.cs" />
+    <Compile Include="RakNet\Router2.cs" />
+    <Compile Include="RakNet\Router2DebugInterface.cs" />
+    <Compile Include="RakNet\Row.cs" />
+    <Compile Include="RakNet\SimpleMutex.cs" />
+    <Compile Include="RakNet\SocketDescriptor.cs" />
+    <Compile Include="RakNet\SortQuery.cs" />
+    <Compile Include="RakNet\StartupResult.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_bool.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNetSocket2_p_t.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_TeamMember_p_t.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_Team_p_t.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_double.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_p_RakNet__TM_Team.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_p_RakNet__TM_TeamMember.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_p_RakNet__TM_World.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_RakNet__NatPunchthroughClient__SendPing.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_RakNet__ReadyEvent__RemoteSystem.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_RakNet__TCPInterface.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_RakNet__TM_World__JoinRequestHelper.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_RNS2RecvStruct.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_unsigned_char.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_unsigned_int.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_unsigned_long_long.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_unsigned_short.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_void.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_wchar_t.cs" />
+    <Compile Include="RakNet\SystemAddress.cs" />
+    <Compile Include="RakNet\Table.cs" />
+    <Compile Include="RakNet\TeamManager.cs" />
+    <Compile Include="RakNet\TeamSelection.cs" />
+    <Compile Include="RakNet\ThreadsafePacketLogger.cs" />
+    <Compile Include="RakNet\TMTopology.cs" />
+    <Compile Include="RakNet\TM_Team.cs" />
+    <Compile Include="RakNet\TM_TeamMember.cs" />
+    <Compile Include="RakNet\TM_World.cs" />
+    <Compile Include="RakNet\TransportInterface.cs" />
+    <Compile Include="RakNet\UDPForwarder.cs" />
+    <Compile Include="RakNet\UDPForwarderResult.cs" />
+    <Compile Include="RakNet\UDPProxyClient.cs" />
+    <Compile Include="RakNet\UDPProxyClientResultHandler.cs" />
+    <Compile Include="RakNet\UDPProxyCoordinator.cs" />
+    <Compile Include="RakNet\UDPProxyServer.cs" />
+    <Compile Include="RakNet\UDPProxyServerResultHandler.cs" />
+    <Compile Include="RakNet\uint24_t.cs" />
+    <Compile Include="RakNet\UnsignedIntPointer.cs" />
+    <Compile Include="RakNet\UnsignedShortPointer.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -145,22 +145,7 @@ namespace RakNet
         ID_RESERVED_7,
         ID_RESERVED_8,
         ID_RESERVED_9,
-        ID_USER_PACKET_ENUM,
-        WELCOME,
-        UPDATE,
-        MY_TURN,
-        GREEN,
-        RED,
-        BLUE,
-        PURPLE,
-        BUZZER,
-        BUZZER1HITFIRST,
-        BUZZER2HITFIRST,
-        BUZZER3HITFIRST,
-        BUZZER4HITFIRST,
-        RIGHTANSWER,
-        WRONGANSWER
-
+        ID_USER_PACKET_ENUM
     }
 
 }
