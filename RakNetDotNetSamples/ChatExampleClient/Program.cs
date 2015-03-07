@@ -202,7 +202,7 @@ namespace ChatExampleClient
             if (p == null)
                 return 255;
             byte buf = p.data[0];
-            if (buf == 27)
+            if (buf == (char)DefaultMessageIDTypes.ID_TIMESTAMP)
             {
                 return (byte)p.data[5];
             }

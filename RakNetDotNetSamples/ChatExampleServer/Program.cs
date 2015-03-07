@@ -154,7 +154,6 @@ namespace ChatExampleServer
             server.Shutdown(300);
             RakNet.RakPeerInterface.DestroyInstance(server);
             Console.Read();
-
         }
 
         private static byte GetPacketIdentifier(Packet p)
@@ -162,7 +161,7 @@ namespace ChatExampleServer
             if (p == null)
                 return 255;
             byte buf = p.data[0];
-            if (buf == 27)
+            if (buf == (char)DefaultMessageIDTypes.ID_TIMESTAMP)
             {
                 return (byte)p.data[5];
             }

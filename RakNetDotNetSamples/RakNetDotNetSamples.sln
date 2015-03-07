@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChatExampleServer", "ChatEx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sample", "Sample\Sample.csproj", "{2E53344D-3EF3-40F6-9C5D-861A43AAB76E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BigPacketTest", "BigPacketTest\BigPacketTest.csproj", "{CAA93742-3FCC-4EC2-89E3-2143352192B1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{2E53344D-3EF3-40F6-9C5D-861A43AAB76E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2E53344D-3EF3-40F6-9C5D-861A43AAB76E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2E53344D-3EF3-40F6-9C5D-861A43AAB76E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CAA93742-3FCC-4EC2-89E3-2143352192B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CAA93742-3FCC-4EC2-89E3-2143352192B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CAA93742-3FCC-4EC2-89E3-2143352192B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CAA93742-3FCC-4EC2-89E3-2143352192B1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
