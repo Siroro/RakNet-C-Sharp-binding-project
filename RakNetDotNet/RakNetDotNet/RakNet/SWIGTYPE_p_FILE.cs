@@ -11,18 +11,18 @@ namespace RakNet {
 using System;
 using System.Runtime.InteropServices;
 
-public class SWIGTYPE_p_RakNet__TCPInterface {
+public class SWIGTYPE_p_FILE {
   private HandleRef swigCPtr;
 
-  internal SWIGTYPE_p_RakNet__TCPInterface(IntPtr cPtr, bool futureUse) {
+  internal SWIGTYPE_p_FILE(IntPtr cPtr, bool futureUse) {
     swigCPtr = new HandleRef(this, cPtr);
   }
 
-  protected SWIGTYPE_p_RakNet__TCPInterface() {
+  protected SWIGTYPE_p_FILE() {
     swigCPtr = new HandleRef(null, IntPtr.Zero);
   }
 
-  internal static HandleRef getCPtr(SWIGTYPE_p_RakNet__TCPInterface obj) {
+  internal static HandleRef getCPtr(SWIGTYPE_p_FILE obj) {
     return (obj == null) ? new HandleRef(null, IntPtr.Zero) : obj.swigCPtr;
   }
 }

@@ -30,6 +30,24 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -114,6 +132,7 @@
     <Compile Include="RakNet\RakPeer.cs" />
     <Compile Include="RakNet\RakPeerInterface.cs" />
     <Compile Include="RakNet\RakString.cs" />
+    <Compile Include="RakNet\RakWString.cs" />
     <Compile Include="RakNet\ReadyEvent.cs" />
     <Compile Include="RakNet\ReadyEventSystemStatus.cs" />
     <Compile Include="RakNet\RemoteSystemIndex.cs" />
@@ -127,9 +146,11 @@
     <Compile Include="RakNet\StartupResult.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_bool.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNetSocket2_p_t.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNet__BitStream_p_t.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_TeamMember_p_t.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_DataStructures__ListT_RakNet__TM_Team_p_t.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_double.cs" />
+    <Compile Include="RakNet\SWIGTYPE_p_FILE.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_p_RakNet__TM_Team.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_p_RakNet__TM_TeamMember.cs" />
     <Compile Include="RakNet\SWIGTYPE_p_p_RakNet__TM_World.cs" />
